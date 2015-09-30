@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li><a href="#">+312345678910</a></li>
+                        <li><a href="#">Харьков, пр-т Ленина 5</a></li>
+                    </ul>
+                </div>
+                <div class="contact-xs">
+                    <a href="#"><span class="icon icon-phone325"></span></a>
+                    <a href="#" type="button" id="open-menu"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article class="clearfix">
+        <aside id="menu">
+            <div class="accordion">
+                <input id="item1" name="accordion" type="radio">
+                <label for="item1">Главная</label>
+            </div>
+            <div class="accordion">
+                <input id="item2" name="accordion" type="radio">
+                <label for="item2"><span class="rotate"></span>Каталог</label>
+                <div>
+                    <div class="accordion">
+                        <input id="inner-item" name="accordion-inner" type="radio">
+                        <label for="inner-item">Телевизоры</label>
+                    </div>
+                    <div class="accordion">
+                        <input id="inner-item1" name="accordion-inner" type="radio">
+                        <label for="inner-item1"><span class="rotate"></span>Телефоны</label>
+                        <div>
+                            <ul>
+                                <li><a href="#">Бабушкофоны</a></li>
+                                <li><a href="#">Бюджетные</a></li>
+                                <li><a href="#">Бизнес-класс</a></li>
+                                <li><a href="#">Флагманы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <input id="inner-item2" name="accordion-inner" type="radio">
+                        <label for="inner-item2">Компьютеры</label>
+                    </div>
+                    <div class="accordion">
+                        <input id="inner-item3" name="accordion-inner" type="radio">
+                        <label for="inner-item3">Бытовая техника</label>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <input id="item3" name="accordion" type="radio">
+                <label for="item3">Контакты</label>
+            </div>
+        </aside>
+        <section>
+            <div class="content">
+                <div class="search-block">
+                    <input type="text" placeholder="поиск" id="search">
+                    <button type="button" id="search-btn">Поиск</button>
+                    <style id="search-style"></style>
+                </div>
+                <div id="results" class="clearfix"></div>
+            </div>
+        </section>
+    </article>
+    <script src="js/custom.js"></script>
+</body>
+</html>
